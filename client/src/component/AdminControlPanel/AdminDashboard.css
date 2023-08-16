@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-i-centerP {
+  align-items: center;
+}
+
+.admin-dashboard {
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.dash-side-navbar {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dash-side-navbar .sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0px;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.dash-side-navbar .sidenav a,
+.openSidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  /* display: flex; */
+  margin: 5px 0px;
+  transition: 0.3s;
+  align-items: center;
+  text-align: start;
+}
+
+.dash-side-navbar .sidenav a i,
+.openSidenav a i {
+  margin-right: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.dash-side-navbar .sidenav a:hover,
+.openSidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.dash-side-navbar .sidenav .closebtn,
+.openSidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #4f4141;
+}
+
+.openPanel {
+  position: absolute;
+  /* top: 215px; */
+  left: 0;
+  cursor: pointer;
+}
+
+.openSidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 250px;
+  position: fixed;
+  /* Stay in place */
+  z-index: 99;
+  /* Stay on top */
+  /* z-index: 1; */
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+.control-panel-flex {
+  margin-left: 250px;
+  transition: 0.5s;
+}
+
+.close-control-panel {
+  margin-left: 0px;
+  transition: 0.5s;
+  height: 100%;
+  /* width: 100%; */
+  overflow: hidden;
+}
+
+.revenue-update-dash {
+  width: 350px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 10px 10px 10px;
+}
+
+.revenue-update-dash .updates-new {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.status-update-card {
+  margin: 10px 0px;
+}
+
+.admin-dashboard-icon img,
+.status-update-card img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  cursor: pointer;
+}
+
+.admin-dashboard-container {
+  margin-left: 25px;
+  /* align-items: center; */
+  justify-content: space-between;
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.admin-middle-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.order-info-flex {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+/* Action */
+.action-icon {
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.action-btn {
+  cursor: pointer;
+  display: flex;
+  margin-left: 5px;
+}
+
+.action-btn i,
+.action-btn input {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.fa-searchengin:hover {
+  color: green;
+}
+.fa-user-pen:hover {
+  color: rgb(87, 17, 250);
+}
+.fa-trash:hover {
+  color: red;
+}
+
+/* 
+.showAction {
+  display: block;
+}
+
+.hideActionP {
+  display: none;
+} */
+
+/* handle Trainings Data */
+.trainings-filter-area select {
+  padding: 5px;
+  width: 15%;
+  outline: none;
+}
+
+.trainings-filter-admin {
+  padding: 5px;
+  width: 30%;
+  outline: none;
+}
+
+.trainings-filter-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.handle-products-flex table tbody {
+  font-size: 13px;
+}

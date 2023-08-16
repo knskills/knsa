@@ -1,0 +1,1220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.justify-content-space-evenly {
+  justify-content: center;
+}
+
+.flex-direct-col {
+  flex-direction: column;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.border-radius-5px {
+  border-radius: 5px;
+}
+
+.fa-clock,
+.course-type svg,
+.sr-price,
+.fa-star {
+  color: #a2820c;
+  font-weight: bold;
+}
+
+.course-type svg {
+  font-size: 25px;
+}
+
+.fa-clock,
+.course-type svg,
+.fa-star {
+  margin-right: 5px;
+}
+
+.training-container .training-flex {
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: 15px auto;
+  color: white;
+  transition: all ease-in-out 0.8s;
+}
+
+.training-flex .training-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 324px;
+  height: 100%;
+  background-color: #02354a;
+  color: white;
+  margin: 12px;
+}
+
+.training-card .update-delete-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.update-delete-btn .checkbox,
+.fa-solid {
+  margin: 0px 5px;
+}
+
+/*Top Trainings Card */
+.training-container .training-headbar,
+trainer-flexBox .training-headbar {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #011526;
+  margin: 15px auto;
+}
+
+.trainer-headbar .trainer-header-bar {
+  background-color: #011526;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.trainer-header-bar .trainer-linebar {
+  background: linear-gradient(90deg, #836806, #7b8de5);
+  height: 2.5px;
+  width: 25%;
+  margin: auto;
+}
+
+.training-headbar p,
+.trainer-headbar p {
+  font-weight: bold;
+  font-size: 25px;
+  color: #a2820c;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.training-headbar a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #a2820c;
+  border-radius: 10px;
+  color: #02354a;
+  padding: 10px;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 400;
+}
+
+.training-headbar ul,
+.trainer-headbar ul {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #297797;
+  flex-direction: row-reverse;
+}
+
+.training-headbar ul li,
+.trainer-headbar ul li {
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+.training-headbar ul li:hover,
+.trainer-headbar ul li:hover {
+  background-color: #a2820c;
+}
+
+.training-card .card-banner {
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.training-card .mnc-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  top: -200px;
+}
+
+.card-details {
+  font-weight: 400;
+  padding: 10px;
+  margin-top: -35px;
+}
+
+.card-details .tng-title {
+  margin-bottom: 20px;
+  color: #a2820c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-details .trainer-details {
+  margin: 15px 0px;
+}
+
+.trainer-details a {
+  text-decoration: none;
+  color: white;
+}
+
+.duration-box {
+  margin-top: 20px;
+  border-top: 2px solid white;
+  padding-top: 8px;
+}
+
+.course-price,
+.ratings p,
+.course-type,
+.training-duration {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.sr-price {
+  font-size: 20px;
+}
+
+/*Top Trainers section */
+.trainers-cards-flex {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.5s;
+  margin-bottom: 65px;
+}
+
+.trainers-cards-flex .trainers-cards {
+  width: 290px;
+  margin: 0px 15px;
+  text-align: center;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  user-select: none;
+}
+
+.trainers-cards a {
+  text-decoration: none;
+  color: #cba519;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.trainers-cards img {
+  margin: 10px 0px;
+  border-radius: 50%;
+  width: 180px;
+  border: 2px solid #a2820c;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 2s;
+}
+
+.trainers-cards img:hover {
+  width: 200px;
+  transition: all 0.5s;
+}
+
+.trainers-cards .trainer-theme {
+  color: white;
+  font-size: 19px;
+  margin: 10px 0px;
+}
+
+.trainers-cards .trainer-more {
+  color: #78c9eb;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Payment-card-page */
+.card-payment-container .card-pe-flex {
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  /* background-color: #a2820c; */
+  background: linear-gradient(
+    14deg,
+    rgb(51 45 153) 0%,
+    rgb(155 209 195) 35%,
+    rgb(199 176 115) 100%
+  );
+  width: 350px;
+  height: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 15px;
+}
+
+.train-video-flex video {
+  width: 100%;
+  /* border-radius: 5px; */
+  outline: none;
+}
+
+.payment-flex-col {
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* background-color: #a2820c; */
+  background-color: transparent;
+}
+
+.payment-flex-col .coup-card {
+  display: inline-block;
+  background-color: #02354a;
+  color: white;
+  padding: 7px;
+  border-radius: 11px;
+  font-size: 13px;
+  margin: 10px auto;
+}
+
+.amount-pay-card b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(51 45 153);
+}
+
+.pay-btn-flex .mrp-card P {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 12px;
+  color: gray;
+}
+
+.video-dur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dur-cert p {
+  color: rgb(155 209 195);
+}
+
+.dur-cert p i {
+  color: #a18005;
+}
+
+.payment-flex-col .add-wishilist {
+  color: #297797;
+}
+
+.course-about-card {
+  width: 100%;
+  display: block;
+}
+
+.buy-btn-card {
+  display: inline-grid;
+}
+
+.buy-btn-card a {
+  background-color: #a2820c;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 8px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+
+/* entrepreneur data teach*/
+.prenuer-banner img {
+  height: 70%;
+  width: 100%;
+}
+
+.teach-crousel {
+  background: linear-gradient(
+    96deg,
+    rgb(51 45 153) 0%,
+    rgb(155 209 195) 35%,
+    rgb(199 176 115) 100%
+  );
+}
+
+.teach-crousel {
+  background: linear-gradient(
+    96deg,
+    rgb(51 45 153) 0%,
+    rgb(155 209 195) 35%,
+    rgb(199 176 115) 100%
+  );
+}
+
+/* Community section */
+.community-flex {
+  /* background: linear-gradient(0deg, #836806, #7b8de5); */
+  background-image: url("../Utility/Trainings/TrainingsFiles/community.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 0px;
+  transition: all 0.5s;
+}
+
+.community-flex .community-form {
+  border-radius: 10px;
+  border: 2px solid #c9a41b;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 400px;
+  padding: 15px 20px;
+  background-color: #2c5274;
+  overflow: hidden;
+  transition: all 0.5s;
+  animation: communityForm 1.5s;
+}
+
+@keyframes communityForm {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.community-form p,
+.community-form button {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+}
+
+.community-form p {
+  background-color: #3383c9;
+  color: #dee0e5;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.community-form .community-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.community-form label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.community-form input {
+  height: 35px;
+  padding: 0px 7px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #8e00e3;
+}
+
+.community-form button {
+  background-color: #042440;
+  border: 2px solid #ddc0c0;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* mentorship */
+.mentorship-flex .tutor-mentor {
+  background-image: url("../Utility/Trainings/TrainingsFiles/mentorReg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 90px 0px 70px 0px;
+  border-radius: 10px;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 100%;
+  display: flex;
+}
+
+.mentorship-flex .mentor-banner .mentor-images {
+  height: 70%;
+  width: 100%;
+}
+
+.tutor-mentor .mentor-think {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+
+.mentor-think img {
+  height: 437px;
+  margin: auto;
+  width: 100%;
+  border-radius: 80px 0;
+}
+
+.mentor-form {
+  border-radius: 10px;
+  border: 2px solid #c9a41b;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 320px;
+  padding: 15px 20px;
+  background-color: #a2820c;
+  overflow: hidden;
+}
+
+.mentor-form input,
+.mentor-form select,
+.mentor-form textarea {
+  height: 35px;
+  padding: 0px 7px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #8e00e3;
+}
+
+.mentor-form label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.mentor-form .mentor-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mentor-form p {
+  background-color: #3383c9;
+  color: #dee0e5;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.mentor-form button {
+  background-color: #042440;
+  border: 2px solid #ddc0c0;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.mentor-form p,
+.mentor-form button {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+}
+
+/* webinar and events */
+
+.webinar-container .webniar-flex {
+  color: white;
+  font-weight: bold;
+}
+
+.webinar-container .webinar-nav {
+  justify-content: space-around;
+  padding: 10px 20px;
+  background-color: #2e84cf;
+}
+
+.webinar-selection-radio {
+  padding: 10px 20px;
+  background-color: yellowgreen;
+}
+
+.webinar-selection-radio .upcoming-webinare {
+  display: flex;
+  margin: 0px 15px;
+}
+
+.upcoming-webinare input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.webinar-nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px;
+}
+
+.webinar-container .webinar-flex-card {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.upcomings-card-data {
+  color: white;
+  font-weight: bold;
+}
+
+/* Single Trainers Details */
+.single-tr-flex {
+  user-select: none;
+}
+
+.trainers-nav-list {
+  background: linear-gradient(96deg, rgb(51 45 153) 0%, rgb(199 176 115) 100%);
+  padding: 15px 10px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid #3e48c7;
+}
+
+.trainers-nav-list .single-home {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.fa-grip-lines-vertical {
+  color: white;
+}
+
+.single-home,
+.single-name {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+  margin: 0px 10px;
+  user-select: none;
+}
+
+.single-name {
+  color: #a2820c;
+  user-select: none;
+}
+
+.single-avatar {
+  text-align: center;
+}
+
+.single-details-card {
+  width: 50%;
+}
+
+.single-details-card .fa-solid {
+  color: #a18005;
+}
+
+.single-details-card,
+.single-avatar {
+  margin: 0px 15px;
+}
+
+.single-avatar img {
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+}
+
+.single-trainers-card {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.si-more-details {
+  margin-top: 20px;
+  border-top: 2px dashed skyblue;
+  padding-top: 5px;
+}
+
+.single-trns-top {
+  width: 100%;
+  padding: 15px 0px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    96deg,
+    rgb(51 45 153) 0%,
+    rgb(155 209 195) 35%,
+    rgb(199 176 115) 100%
+  );
+}
+
+.single-trns-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-media-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid gray;
+  background-color: #02354a;
+  padding: 15px;
+}
+
+.single-paid-trainings-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-l-r-10 {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+.single-media-nav p {
+  color: white;
+}
+
+.single-media-nav p i {
+  color: #a18005;
+  margin: 5px;
+}
+
+.single-trns-media i {
+  color: #a18005;
+  margin: 0px 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.single-trns-media i:hover {
+  color: yellowgreen;
+}
+
+.single-trns-trng-card {
+  width: 100%;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.Explore-all-trainings {
+  margin: 20px 0px;
+}
+
+.single-trns-followers a,
+.single-trns-trng-card a {
+  background-color: #a2820c;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+
+.single-trns-popular-courses {
+  width: 290px;
+  height: 420px;
+  background-color: #02354a;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin: 0px 15px;
+}
+
+.single-trns-trng-right-pan {
+  width: 70%;
+  background-color: #02354a;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  transition: all ease-in-out 0.8s;
+}
+
+.single-trns-trng-updated {
+  width: 500px;
+  border: 2px solid;
+  padding: 15px;
+  margin: 0px 10px;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.upcomings-updates {
+  text-align: center;
+  margin: auto;
+}
+
+.single-trns-trng-event {
+  width: 280px;
+  border: 2px solid;
+  padding: 15px;
+  margin: 0px 10px;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Single Trainings fetch data */
+.single-trng-top {
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    14deg,
+    rgb(51 45 153) 0%,
+    rgb(155 209 195) 35%,
+    rgb(199 176 115) 100%
+  );
+}
+
+.s-trainings-top-header h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #042440;
+}
+
+.single-trng-top .single-trng-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.single-trng-left {
+  max-width: 60%;
+  height: auto;
+  margin: 0px 15px;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.single-trng-right {
+  width: 28%;
+  height: auto;
+  margin: 15px;
+}
+
+.single-trainings-updated {
+  align-items: center;
+  justify-content: center;
+}
+
+.s-trng-bgr-sql,
+.strng-update-left {
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.strng-update-left p {
+  padding-right: 6px;
+  margin: 0px 5px;
+}
+
+.strng-update-left {
+  border-top: 2px solid gray;
+  padding-top: 15px;
+}
+
+.s-trng-bgr-sql p {
+  background-color: #042440;
+  padding: 6px;
+  align-items: center;
+  text-align: center;
+  margin: 0px 5px;
+  color: white;
+  user-select: none;
+  font-size: 15px;
+}
+
+.training-data-container .t-data-flex {
+  margin: 50px 0px;
+}
+
+.single-trng-index ul {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #2c5274;
+}
+
+.single-trng-index ul li {
+  list-style: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.training-data-details {
+  width: 55%;
+  margin: 0px 15px;
+}
+
+.payment-card-details {
+  margin: 0px 15px;
+}
+
+.benifits-opinion {
+  background-color: #02354a;
+  color: white;
+  padding: 10px;
+  margin: 15px 0px;
+  border-radius: 5px;
+}
+
+.benifits-opinion h3 {
+  margin-bottom: 15px;
+}
+
+.sequal-benifits p i {
+  color: #a18005;
+}
+
+.Trainings-card-contain {
+  transition: all ease-in-out 0.8s;
+}
+
+@media screen and (max-width: 1310px) {
+  .Trainings-card-contain {
+    transition: all ease-in-out 0.8s;
+  }
+
+  .training-container .training-flex .training-card {
+    transition: all ease-in-out 0.8s;
+  }
+
+  .s-trng-bgr-sql {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .s-trng-bgr-sql-left,
+  .s-trng-bgr-sql-right {
+    margin: 5px auto;
+    transition: all ease-in-out 0.8s;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mentorship-flex .tutor-mentor {
+    flex-direction: column;
+    align-items: center;
+    transition: all ease-in-out 0.8s;
+    padding: 10px;
+  }
+
+  .mentor-think img {
+    height: auto;
+  }
+
+  .mentor-form,
+  .mentor-think img {
+    transition: all ease-in-out 0.8s;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .single-trns-trng-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .single-trns-popular-courses,
+  .single-trns-trng-right-pan {
+    margin: 10px auto;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .single-trns-trng-right-pan {
+    background-color: transparent;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+    width: 100%;
+  }
+
+  .single-trns-trng-updated,
+  .single-trns-trng-event {
+    background-color: #02354a;
+    transition: all ease-in-out 0.8s;
+    margin: 10px;
+  }
+
+  .single-media-nav {
+    flex-direction: column;
+    transition: all ease-in-out 0.8s;
+  }
+  .single-media-nav .single-trns-media,
+  .single-paid-trainings-data,
+  .single-trns-followers {
+    margin: 10px auto;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .single-trng-top,
+  .strng-update-left {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .single-trng-left {
+    max-width: 100%;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .s-trng-bgr-sql p {
+    font-size: 12px;
+    transition: all ease-in-out 0.8s;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .single-trns-trng-updated {
+    width: 80%;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .payment-card-details {
+    transition: all ease-in-out 0.8s;
+  }
+
+  .training-data-container .t-data-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .training-data-details,
+  .payment-card-details {
+    transition: all ease-in-out 0.8s;
+    margin: 5px auto;
+  }
+
+  .training-data-details {
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .single-trns-top {
+    flex-direction: column;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .single-details-card h1 {
+    margin-bottom: 20px;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .single-details-card h1,
+  .single-paid-trainings-data p {
+    text-align: center;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .s-trng-bgr-sql-left,
+  .s-trng-bgr-sql-right {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .s-trng-bgr-sql-left p,
+  .s-trng-bgr-sql-right p {
+    margin: 5px;
+    flex-wrap: wrap;
+    transition: all ease-in-out 0.8s;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .single-trns-trng-event,
+  .single-trns-popular-courses {
+    width: 80%;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .s-trainings-top-header h2 {
+    font-size: 30px;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .mentor-think img {
+    /* margin: 0px 10px; */
+    border-radius: 5px;
+    height: 25%;
+    width: 100%;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .mentor-form {
+    width: 100%;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .community-flex .community-form {
+    width: 290px;
+    transition: all ease-in-out 0.8s;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card-payment-container {
+    padding: 10px;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .card-payment-container .card-pe-flex {
+    width: 100%;
+  }
+
+  .mentor-form {
+    font-size: 12px;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .mentor-form p,
+  .mentor-form button {
+    font-size: 15px;
+    padding: 5px;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .community-flex .community-form {
+    width: 240px;
+    transition: all ease-in-out 0.8s;
+  }
+
+  .community-form p {
+    font-size: 18px;
+    transition: all ease-in-out 0.8s;
+  }
+}

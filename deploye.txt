@@ -1,0 +1,610 @@
+1. Firstly i'll come for point of our domain in godady or hostinger server
+process is giving in whatsaap.
+
+2. secondaly i'll generate of our pvtkey and pblcky using putty generator and our pblckey is copy and mention in our godady >> server >> manage >> whm launch >> and search left side of ssh key generate and click on import and paste of copied ssh in pblckey and give manually name itslef and save and click on authorized and save done.
+
+3. open putty give the commond for setup of all sitesenabled which is screenshot is mention in whatsaap.
+
+4. firstly i'll give of 
+{
+  "name": "client",
+  "version": "0.1.0",
+  // "private": true,
+  "homepage": "http://knla.in", or "homepage": "http://ip_Address/Server" 
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+
+    in client package.json
+    and save
+
+
+5. and create .env file in client and give the "REACT_APP_API_URL = "http://knla.in/server"" and save and give the code is in helper file is..
+require("dotenv").config();
+export const BASE_URL = process.env.REACT_APP_API_URL;
+and save
+
+require("dotenv").config();
+const axiosInstance = axios.create({
+baseURL:process.enve.REACT_APP_API_URL)}
+and i'll exchange from axios to axiosInstance.
+
+6. file setup in vs code is coming in client firstly i'll come in vs code and come in client>> package.json,
+>> if i have proxy at the end is 
+{
+{......},
+"proxy":"http://localhost:8080/server/"
+}
+
+then it'll i remove and go to top set the 
+"hompage": ".", and remove of "private:"true" and save.
+eg....
+firstly i'll give of 
+{
+  "name": "client",
+  "version": "0.1.0",
+  // "private": true,
+  "homepage": "."  // it's called set the proxy
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+
+    in client package.json
+    and save
+
+and now i'll create a env file above of >>client >> .env
+and go inside and give the code is 
+REACT_APP_API_URL = "http://knla.in/Server"
+
+and now i'll come on client >> helper.js file and give the code is 
+require("dotenv").config()
+export const BASE_URL = process.env.REACT_APP_API_URL;
+and also same for seperate admin page.
+
+
+7. and now i'll uplod our project using git ssh key or using git desktop or git bash.
+
+i'll upload of all file or folder sing gitbash bcs it is a window so..
+now i'll create rep in github account and follow to each steps
+git init
+git add .
+git commit -M main (if here not main then exchange to master using commond)
+gite remote ad orgin http......
+git push -u origin main.
+and refresh page and then page are uplaod successfully and show after refresh browser.
+
+// for update
+8. if i want change of any content in file then i'can update using key is "git add." again and hit enter.
+"git status" and now i can check theire is not show red even show green and i'll have to do commit or git message so that "git commit -m "adding back button"" and hit enter.
+and now finally "git push" and hit enter.
+
+9. now i'll come again on putty, neither puttyGen(this is use for create pvt or pblckey for connect server to commond run putty)
+
+our code start from ufw status in putty in the root
+9.1 @178 www]# ufw status
+9.2 @178 www]# ls
+9.3 @178 www]# mkdir knla
+9.4 @178 www]# ls
+9.5 @178 www]# cd knla
+9.6 @178 knla]# ls
+9.7 sudo nano /etc/nginx/sites-available/default
+9.8 rm /etc/nginx/sites-available/default
+9.9 cd /etc/nginx/sites-enabled
+9.10 ls
+9.11 rm default
+9.12 ls
+9.13 nano /etc/nginx/sites-available/knla
+
+give the code is
+server {
+  listen 80;
+
+  location / {
+        root /var/www/knla;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+  }
+
+9.14 ctrl+x
+
+9.15 ln -s /etc/nginx/sites-available/knla /etc/nginx/sites-enabled/knla
+9.16 ls
+9.17 cd /root
+9.18 nginx -t 		//(get msg system ok and success fully)
+9.19 systemctl start nginx
+9.20 systemctl status // mesg are showing "state is running"
+9.21 
+
+firstly i'll give of 
+{
+  "name": "client",
+  "version": "0.1.0",
+  // "private": true,
+  "homepage": "http://knla.in", or "homepage": "http://ip_Address/Server" 
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+
+    in client package.json
+    and save
+
+
+9.22. and create .env file in client and give the "REACT_APP_API_URL = "http://knla.in/server"" and save and give the code is in helper file is..
+require("dotenv").config();
+export const BASE_URL = process.env.REACT_APP_API_URL;
+and save
+
+require("dotenv").config();
+const axiosInstance = axios.create({
+baseURL:process.enve.REACT_APP_API_URL)}
+and i'll exchange from axios to axiosInstance.
+
+9.23. file setup in vs code is coming in client firstly i'll come in vs code and come in client>> package.json,
+>> if i have proxy at the end is 
+{
+{......},
+"proxy":"http://localhost:8080/server/"
+}
+
+then it'll i remove and go to top set the 
+"hompage": ".", and remove of "private:"true" and save.
+eg....
+firstly i'll give of 
+{
+  "name": "client",
+  "version": "0.1.0",
+  // "private": true,
+  "homepage": "."  // it's called set the proxy
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+
+    in client package.json
+    and save
+
+and now i'll create a env file above of >>client >> .env
+and go inside and give the code is 
+REACT_APP_API_URL = "http://knla.in/Server"
+
+and now i'll come on client >> helper.js file and give the code is 
+require("dotenv").config()
+export const BASE_URL = process.env.REACT_APP_API_URL;
+and also same for seperate admin page.
+
+
+10. now give the code is
+"yum install git" in root and hit enter and give yes and also enter.
+
+11. mkdir knla hit enter
+cd knla enter
+
+12. and now i'll go on repository >> code >> and copy of the https link and paste with dot . in putty and hit enter.
+eg:- git clone http://webiste.git . and hit enter gin putty
+
+13. ls, enter and the i'll received all folder brought inside of server here. 
+
+14. and now run is First configuration
+ nano /etc/nginx/sites-available/knla
+and hit enter
+
+and make the one more server location is 
+exist is
+server {
+  listen 80;
+
+  location / {
+        root /var/www/knla;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+  }
+
+// commit : - this is the new after nano commond
+ location /server {
+	proxy_pass http://ip_addrss/:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+  }
+}
+
+now i'll save using ctrl + x and y and hit enter, and go to again outside and check status giving commond is
+
+15. nginx -t (hit enter)
+show the message is ok and successful, and now reload of ngnix commond is
+
+16. systemctl reload nginx (hit enter)
+
+17. Now install of node js using commond is..
+yum install nodejs (hit enter)
+
+give y (hit enter)
+
+18. yum install npm (hit enter)
+19.give y (hit enter)
+20. now go on mongodb atlas for storing the data using ip address
+>> mongodbAtlas >> atls >> ip Access List >> click on Add IP Address. and give the ip address in Access List Entry and commit and confirm click
+
+21. and now again come on putty and give the commond is 
+cd server (switching in /knla#) (hit enter)
+
+22. npm install (hit enter)
+
+23. now i'll give the .env file for server using commond is 
+nano .env (switching in (hit enter) and copy the enve file server >> from vs code
+and save ctrl + x and y and hit enter.
+
+24. for run application using commond is
+node index.js (hit enter) if message are showing db connected and server is running means code is success till.
+
+25.lets check nano cmd is - nano /etc/nginx/sites-available/knla (hit enter) if all right ok then will save.
+
+26. now reload he nginx server using is 
+systemctl reload nginx (hit enter)
+
+27.node index.js (hit enter) and refresh the browser are ok or not.
+
+28. npm i -g pm2 (hit enter) inside of /knla/server#
+
+29. pm2 start --name server index.js (hit enter) after hiting is show Done. and server is run success status online in the table.	
+
+30. now run ubuntu is..
+pm2 startup ubuntu (hit enter)
+
+31. pm2 status (hit enter) again showing table is success and run online status.
+
+// for Client
+32. now i'll go to client side then using commond is 
+cd ../client (hit enter)
+
+33. npm i (hit enter)
+
+34. give the commond is, nano .env (hit enter) for store the environmental data for client. paste and save using ctrl + x and y and hit enter.
+
+35. npm run build (hit enter)
+
+36. rm -rf /var/www/knla/* (hit enter)
+
+37. mkdir /var/www/knla/client (hit enter)
+ 
+38. cp -r build/* /var/www/knla/client (hit enter)
+
+39. now i'll again give the location for client using commond is nano is...
+nano /etc/nginx/sites-available/knla (hit enter)
+
+40. open is again and make the second more for client location is giving /client like.. 
+exist is
+
+server {
+  listen 80;
+  location / {
+        root /var/www/knla/client;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+  }
+
+// commit : - this is the new after nano commond
+ location /server {
+	proxy_pass http://ip_addrss/:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+  }
+}
+
+and now i'll save using ctrl + x, and y and (hit enter)
+
+41. reload nginx using 
+systemctl reload nginx (hit enter) and when i'll refresh of our page then it'll showing correctly for ui.
+
+42. if i want change of any particular component then i'll us commond is..
+nano src/components/<folder_name>/<filName.js> (hit enter)
+and paste of the correct code and save using using ctrl + x, and y and (hit enter)
+
+43. and again run build commond is, npm run build (hit enter)
+
+44. cp -r build/* /var/www/knla/client (hit enter)
+
+45. systemctl reload nginx (hit enter)
+
+46. and reload again browser then it'll showing correctly.
+
+47. nwo i'll give the server location particular using commond is.. 
+nano /etc/nginx/sites-available/knla (hit enter)
+
+48. open is again and make the thired time more for client location is giving /client like.. if i have admin page then i'll create a third part otherwise is i'll save earlier exist server location
+exist is
+
+server {
+  listen 80;
+
+server_name knla.in www.knla.in;
+
+  location / {
+        root /var/www/knla/client;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+  }
+
+}
+
+
+// commit : - this is the new after nano commond
+ server {
+  listen 80;
+  
+  server_name server.knla.in;
+
+  location / {
+	proxy_pass http://ip_addrss/:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+  }
+}
+
+
+server {
+  listen 80;
+server_name admin.knla.in;
+
+  location / {
+        root /var/www/knla/admin;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+  }
+
+
+and now i'll save using ctrl + x, and y and (hit enter)
+
+
+49. check status of nginx using commond is ..
+nginx -t (hit enter) then i'll show is syntax is ok and test is successfull.
+
+50. and now i'll rload the page using commond is
+systemctl reload nginx (hit enter)
+
+// admin page commond is same like client.
+51.  now i'll shift in admin using commond is
+cd ../admin (hit enter)
+
+52. npm i (hit enter)
+
+53. npm run build (hit enter)
+
+54. give envirnoment data is using commond is..
+nano .env
+
+copy the data from admin folder and paste here and save is 
+REACT_API_API_URL = "http://server.knla.in/server/" 
+and now i'll save using ctrl + x, and y and (hit enter)
+
+53. npm run build (hit enter)
+
+54. mkdir /var/www/knla/admin (hit enter)
+ 
+55. cp -r build/* /var/www/knla/admin (hit enter)
+
+56. cd ../client (and now i'll go on client side) (hit enter)
+
+57. nano .env (hit enter) for change the ip address to api then..
+
+58. REACT_API_API_URL = "http://server.knla.in/server/" 
+
+59. npm run build (hit enter)
+
+60. cp -r build/* /var/www/knla/client (hit enter)
+
+61. systemctl reload nginx (hit enter)
+
+//secure connection install https.
+
+
+62. yum install certbot python3-certbot-nginx (hit enter) (inside in client. hit yes and hit enter.
+
+63. ufw status (hit enter) showing status is ok all allow of nginx full anywhere.
+
+64. certbot --nginx -d knla.in -d server.knla.in -d admin.knla.in (hit enter)
+
+65. give the email address "knsaacademy@gmail.com" (hit enter)
+
+66. for agree give, a (hit enter)
+
+67. n (hit enter) again email address
+
+68. give the 2 (hit enter) for : Redirect - make all
+
+69. Let’s Encrypt’s certificates are only valid for ninety days. To set a timer to validate automatically:
+
+systemctl status certbot.timer (hit enter) (now our certificates are daily renew)
+
+70. systemctl reload nginx (hit enter) (client) and now i'll reload the page and our side is doing well. that's it. and our sites are secure https.
+
+
+
+/// filHow to use FileZilla to Connect FTP Server and Host Project (Hindi)////
+
+1. click on domain manage 
+2. search ftp :- click on Hosting >> file >> ftp
+3. open FleZilla >> user for fileUpload 
+install and open it >> click on collapse button below file above host.
+4. open new tab of "Site Manager".
+5. click on "New Site" and give the website name which i want recognize it.
+6. and give mandatory field inside of Filzilla from "FTP Access".
+and password.
+7. after login fileZilla go to left side Remote Site and below go on Filename and open public_html and drag and drop file from local Site filename which website i want upload here.
+
+
+How To Deploy MERN ECommerce On Ubuntu Using Hostinger VPS.
+/// Connect vps to the DNS Nameserver
+1. copy the vps ip_address - 82.180.162.211
+2. come domain >> manage >> DNS /NameServers >> Manage DNS records A || @ || Points to = 82.180.162.211
+3. Click on "Add Records" and "Confirm"
+
+and will mentin same ip address for wwww
+4. come domain >> manage >> DNS /NameServers >> Manage DNS records A || www || Points to = 82.180.162.211
+5. Click on "Add Records" and "Confirm"
+
+6. next mention ip address for version6 from go again vps, SSH access or vps access adn copy IPv6 and paste
+DNS records AAAA || @ || Points to = 2a02:4780:10:b3f5::1
+7. Click on "Add Records" and "Confirm"
+DNS records AAAA || www || Points to = 2a02:4780:10:b3f5::1
+7.1 Click on "Add Records" and "Confirm"
+
+8. now i'll open of our project on vs code and also open of Git bash from home directory of project and paste ofSSH access >> Terminal =  ssh root@82.180.162.211 ,and (hit enter), yes (hit enter)
+ 
+9. yum get update (hit enter)
+
+10 . sudo yum install git (hit enter) y (hit enter)
+
+install node 
+11. curl -sl https://deb.nodesource.com/setup_16.x -o /temp/nodesource_setup.sh (hit enter)
+
+12. /temp/nodesource_setup.sh (hit enter)
+13. sudo yum install nodejs (hit enter) install on ubuntu.
+14. node -v (hit enter) for check version on 
+15. npm -v (hit enter)
+16. mkdir -p ~/apps/knsacademy/repo (hit enter)
+17. mkdir -p ~/apps/knsacademy/dest (hit enter)
+18. cd ~/apps/knsacademy/repo (hit enter)
+19. root@di..~/apps/knsacademy/repo#
+20. git -bare init
+21. nano hooks/ post-receive
+22. paste the commond is 
+#!/bin/bash -l
+echo 'post-receive: Triggered.'
+cd ~/apps/knsacademy/dest/
+echo 'post-receive:git check out...'
+git -git-dir=root/apps/knsacademy/repo/ -work-tree=/root/apps/knsacademy/dest/ checkout master -f 
+echo 'post-receive: npm install...'
+npm install
+npm run build
+forever restart knsacadem
+
+23. save using ctrl+x, y hit enter.
+
+
+// Mongo DB Atlas configuration //
+1. after open Atals >> Database >> Brows Collections >> give the Databse Name & Collection Name 
+and click on create
+
+2. go to the database Access
+click on to the "Add new Database User" give the password and userName.
+
+3. scroll down com on Build in role and select "Read and Write to any database" and click on "Add User".
+
+4. now got to below "Network Access" click add "IP Address" and this "IP Address" are bring from vps Pancle from "VPS Access or ssh Access" beside of "VPS Information". 
+
+5. and paste of "ssh Access" ip address in "Access List Entry" and give some manually commond and click on confirm.
+6. and their are sho our current ipd address after click on confirm.
+
+7. now i'll go on Database >> connect >> connect your application >> and copy the string url of mongodb. and save in one file in project folder
+
+8. cd ../dest
+9. nano .env hiter enter and paste is 
+MONGO_URL = "URL.." here mongo url 
+PORT_HOST = 8080
+MONGO_URL = mongodb+srv://aarshgroup:aarsh$284mongoatlas@rbvcorporate.0u7dxsu.mongodb.net/ytmHub
+JWT_SECRET = KN_ACADEMY_010203
+and save using ctrl+x, y hit enter.
+
+10. after save it ls .env hit enter show the .env file
+
+11. sudo a2enmod proy proxy_http rewrite headers expires and hit enter.
+
+12. sudo nano /etc/apache2/sites-available/knsacademy.com.conf enter hit.
+
+13. give here .httaccess name
+
+is ..
+<VirtualHost *:80>
+ServerName knsacademy.in
+ServerAlias www.knsacademy.in
+
+ProxyRequests Off
+ProxyPreserveHost On
+ProxyVia Full
+
+<Proxy *>
+Require all granted </Proxy>
+
+ProxyPass / http://127.00.0.1:8080/
+ProxyPassReverse / http://127.00.0.1:8080/
+</VirtualHost>
+
+*** or ***
+
+correct find by StackOverflow
+
+<VirtualHost *:80>
+  DocumentRoot /var/www/app1
+  ServerName app1.example.com
+</VirtualHost>
+
+<VirtualHost *:80>
+  DocumentRoot /var/www/example
+  ServerName example.com
+</VirtualHost>
+
+for save using ctrl+x, y, hit enter.
+
+14. sudo a2dissite 000-default
+15. sudo a2ensite knsacademy.in.conf
+16. sudo systemctl restart apache2
+17. sudo apt install certboot python3-certboot-apache (hit Enter) tye y and also hit enter
+
+ssl certificate configuration : -
+18. sudo certbot -d knla.in -d www.server.knla.in --apache --agree-tos -m knsacademy@gmail.com --no-eff-email --redirect (hit enter)
+
+19. confirm after hit enter get of successfully message.
+20. sudo certbot renew --dry-run
+21. npm install forever -g 
+22. forever start --uid="knsacademy" -- sourceDir="/root/apps/knsacademy/dest/" backend/index.js
+23. pending some process is lathy..
+
+
+************* ////////// ***********
+How to Access VPS Hosting Remote Server using Built in Terminal (Hindi)
+copy ssh access terminal ip - ssh root@82.180.162.211
+password is ssh root password and open cmd and paste ip and give yes hit enter and give password our ssh is generated in c >> users >> lenevo >> .ssh >> know_hosts
+generate id_rsa using commond cmd
+pashprashe password is - knsa, for generating public key and pvt key. (i can also create by putty gen.
+always use in remote public key.
+
+knsaPvtKey : -
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzu6B4W/GU7J7XqBkAIYOo/qBaOTW/vlwZy8hrdhx3Pjo6721Jx46/FA1VMTP/T3GTfEQ6TKtlReEQGFPyzkm9rXn5o/nBA/4bZeGz9Ntubd4bnM5gxo+Gl7gXroB4WBJ5qtyq1Lp9eEXcyuuKObO8aUv9piZd/ipYZgMpCvb/xG4VxZnEOJmWhhaAEoCjNhkQmnnRlPMaPMijfwP3rSoOO1ZhED3xanFQ1Sn9EiUvxlE8yu9BwR64q+pa1Mu4BbVd1puHJASJilCgR0aZD/q/IhKYG1j0obMjumDXOIc+9A/PVDha0luWm6WO3IdyBjzKZVltd7AD9Auz6qxpFwTz rsa-key-20230815
+ 
+
+****************  /////  ***************
+How to Setup SSH Key and Access VPS Hosting Remote Server using Built in Terminal (Hindi)
+using putty gen
+copy pbc key and paste in remote ssh key inside and save.
+
+now start deploye in hindi
+firstly now i'll check of name server will be defualt.
