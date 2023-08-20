@@ -14,7 +14,7 @@ const TrainingsCardsBtn = ({ refresh, filterTrainings, items }) => {
 
   useEffect(() => {
     refresh;
-  }, [trainingItem]);
+  }, []);
 
   return (
     <>
