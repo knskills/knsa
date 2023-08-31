@@ -33,7 +33,7 @@ const AdminRegister = () => {
         date: new Date(),
       })
       .then((res) => {
-        navigate("/api/login-admin");
+        navigate("/admin/admin-login");
         console.log("res");
         alert("Admin Register SuccessFully!");
       })
